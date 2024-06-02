@@ -1,10 +1,13 @@
+import Container from "../../../Shared/Container/Container";
 
 
 const Hero = () => {
     return (
-        <div >
-           Hero 
-        </div>
+        <Container>
+            <div className="bg-gray-100">
+fadsfsd
+            </div>
+        </Container>
     );
 };
 
