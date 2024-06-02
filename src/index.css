@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+
+@font-face {
+    font-family: brockman;
+    src: url(/brockman.ttf);
+}
+
+
+*{
+    font-family: 
+  brockman
+}
+
+
+.heading-1{
+    @apply md:text-6xl  xsm:text-4xl text-3xl font-medium
+}
+
+.description-1{
+    @apply xsm:text-xl text-lg
+}
+
+
