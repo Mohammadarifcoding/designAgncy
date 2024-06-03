@@ -8,7 +8,8 @@ export default {
       },
       boxShadow: {
         'custom-hover': '0 6px 13px rgba(0, 0, 0, 0.5)',
-        'normal-hover': '0 3px 6px rgba(0, 0, 0, 0.5)'
+        'normal-hover': '0 3px 6px rgba(0, 0, 0, 0.5)',
+        'custom-inner-shadow':  'inset 0px 4px 0px #575656'
       },
     },
   },

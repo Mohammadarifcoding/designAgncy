@@ -22,4 +22,19 @@
     @apply xsm:text-xl text-lg
 }
 
+.main-bg {
+    background-image: radial-gradient(#d9d1ff 2px, transparent 2px);
+    background-size: 32px 32px;
+    background-color: #f0f5ff;
+}
+.inner-shadow {
+    box-shadow: inset 0px 0px 0 #7d7c7e, inset 0px 4px 0px #575656;
+
+}
+.inner-shadow:hover{
+      box-shadow:  inset 0px 4px 0px #575656;
+}
+
+
+
 
