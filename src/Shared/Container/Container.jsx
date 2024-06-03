@@ -1,11 +1,11 @@
+import cn from "../../lib/utils";
 
-
-const Container = ({children}) => {
-    return (
-        <div className="max-w-[1440px]  px-4 mx-auto ">
-            {children}
-        </div>
-    );
+const Container = ({ children, className, id }) => {
+	return (
+		<div id={id} className={cn("mx-auto max-w-[1500px]  px-2 md:px-6 lg:px-12", className)}>
+			{children}
+		</div>
+	);
 };
 
 export default Container;
