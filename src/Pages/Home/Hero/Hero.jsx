@@ -36,22 +36,19 @@ const Hero = () => {
           </div>
           <div className="flex justify-center text-[12px]">Available Now</div>
           <div className="flex justify-center my-10">
-            <Button>
-              <div className="flex  max-w-[600px]">
-				<Marquee>
-				{BrandName.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-6">
-                    <div  className="">
-                      {item.name}
-
+            <Button className={'px-0  rounded-full '} OuterClassName={'rounded-full mx-4'}>
+              <div className="flex  lg:max-w-[700px] md:max-w-[500px] sm:max-w-[490px] xsm:max-w-[350px] max-w-[250px]">
+                <Marquee>
+                  <div className="flex">
+                  {BrandName.map((item, idx) => (
+                    <div key={idx} className="flex items-center gap-6">
+                      <div className="">{item.name}</div>
+                      <div className="bg-blue-500 w-[7px] h-[7px] mr-6 rotate-45"></div>
                     </div>
-					<div className="bg-blue-500 w-[7px] h-[7px] mr-6 rotate-45">
-
-					</div>
+                  ))}
                   </div>
-                ))}
-				</Marquee>
-                
+                 
+                </Marquee>
               </div>
             </Button>
           </div>
