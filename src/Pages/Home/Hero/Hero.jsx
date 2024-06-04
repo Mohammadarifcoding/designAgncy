@@ -11,9 +11,10 @@ const Hero = () => {
 				</div>
 				<div className="absolute md:right-0 -right-12 -z-10 lg:mt-[100px] md:mt-[150px] sm:mt-[200px] mt-[250px]">
 					<img className="md:h-[250px]  sm:h-[190px]  xsm:h-[150px] w-[110px]" src={bannerRight} alt="" />
+          
 				</div>
 				<div className="z-100">
-					<h2 className="heading-1 text-center max-w-[1000px] mx-auto">Unlimited POD Designs That Convert – Tailored Just for You</h2>
+					<h2 className="heading-1  text-center max-w-[1000px] mx-auto">Unlimited POD Designs That Convert - Tailored Just for You</h2>
 					<p className="description-1 max-w-[800px] mx-auto text-center my-8">Unlock Creative Freedom with Our Flexible POD Design Subscriptions – Pause or Cancel Anytime</p>
 					<div className="flex justify-center">
 						<div className="w-max hover:shadow-custom-hover transition-all rounded-xl  duration-500">
@@ -29,4 +30,4 @@ const Hero = () => {
 };
 
 export default Hero;
-Hero;
+
