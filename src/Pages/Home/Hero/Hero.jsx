@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
           <div className="flex justify-center text-[12px]">Available Now</div>
           <div className="flex justify-center my-10">
-            <Button className={'px-0  rounded-full '} OuterClassName={'rounded-full mx-4'}>
+            <Button className='px-0  rounded-full' OuterClassName={'rounded-full mx-4'}>
               <div className="flex  lg:max-w-[700px] md:max-w-[500px] sm:max-w-[490px] xsm:max-w-[350px] max-w-[250px]">
                 <Marquee>
                   <div className="flex">
@@ -59,4 +59,4 @@ const Hero = () => {
 };
 
 export default Hero;
-Hero;
+
