@@ -5,7 +5,7 @@ import Navbar from './../../Shared/Navbar/Navbar';
 const Home = () => {
   return (
 		<div className="max-w-[1440px] mx-auto">
-      <div>
+      <div className="">
         <Navbar></Navbar>
       </div>
 			<Header />
