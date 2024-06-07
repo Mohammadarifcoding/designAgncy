@@ -23,9 +23,9 @@
 }
 
 .main-bg {
-    background-image: radial-gradient(#d9d1ff 2px, transparent 2px);
+    background-image: radial-gradient(#E1DFDC 2px, transparent 2px);
     background-size: 32px 32px;
-    background-color: #f0f5ff;
+    background-color: #F7F3EC;
 }
 .inner-shadow {
     box-shadow: inset 0px 0px 0 #7d7c7e, inset 0px 3px 0px #575656;

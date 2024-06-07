@@ -25,11 +25,10 @@ const Hero = () => {
         </div>
         <div className="z-100 flex gap-4 flex-col">
           <h2 className="heading-1 text-center max-w-[1000px] mx-auto">
-            Unlimited POD Designs That Convert – Tailored Just for You
+          Unlimited POD Designs on Subscriptions.
           </h2>
           <p className="description-1 max-w-[800px] mx-auto text-center my-4">
-            Unlock Creative Freedom with Our Flexible POD Design Subscriptions –
-            Pause or Cancel Anytime
+          Unlock Creative Freedom with Our Flexible POD Design Subscriptions – Cancel Anytime 
           </p>
           <div className="flex justify-center">
             <Button>See Plans</Button>
