@@ -20,7 +20,7 @@ const AnyTask = () => {
             }
            </div>
           
-           <div className="mt-7 flex gap-10 flex-wrap">
+           <div className="mt-7 flex gap-10 justify-center flex-wrap">
            {
                 PortfolioData.slice(0,number).map((item)=>(
                     <img className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
