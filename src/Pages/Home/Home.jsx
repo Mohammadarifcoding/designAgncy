@@ -4,6 +4,7 @@ import Navbar from './../../Shared/Navbar/Navbar';
 import Portfolio from "./Portfolio/Portfolio";
 import { useState } from "react";
 import AnyTask from "./AnyTask/AnyTask";
+import WhatWeCreate from "./WhatWeCreate/WhatWeCreate";
 
 const Home = () => {
 	const [isOpen,setIsOpen] = useState(true)
@@ -14,10 +15,11 @@ const Home = () => {
 
       </div>
 			<Header />
-			<main className="main-bg rounded-3xl mx-4">
+			<main className="main-bg rounded-3xl mx-4 overflow-x-hidden">
 				<Hero />
 				<Portfolio/>
 				<AnyTask/>
+				<WhatWeCreate/>
 			</main>
 		</div>
 	);
