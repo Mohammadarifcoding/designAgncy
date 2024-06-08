@@ -10,6 +10,7 @@ import d2 from "../../../../public/WhatWeCreate/d2.svg";
 import d3 from "../../../../public/WhatWeCreate/d3.svg";
 import s1 from "../../../../public/WhatWeCreate/s1.svg";
 import s2 from "../../../../public/WhatWeCreate/s2.svg";
+import Button from "../../../Shared/Button/Button";
 
 const WhatWeCreate = () => {
   const data = [
@@ -70,6 +71,10 @@ const WhatWeCreate = () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center mt-10">
+            <Button>See Plans</Button>
+        </div>
+          
       </div>
     </Container>
   );
