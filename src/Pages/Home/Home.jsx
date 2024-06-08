@@ -18,8 +18,8 @@ const Home = () => {
 			<main className="main-bg rounded-3xl mx-4 overflow-x-hidden">
 				<Hero />
 				<Portfolio/>
-				<AnyTask/>
 				<WhatWeCreate/>
+				<AnyTask/>
 			</main>
 		</div>
 	);
