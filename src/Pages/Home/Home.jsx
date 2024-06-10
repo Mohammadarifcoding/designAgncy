@@ -5,24 +5,25 @@ import Portfolio from "./Portfolio/Portfolio";
 import { useState } from "react";
 import AnyTask from "./AnyTask/AnyTask";
 import WhatWeCreate from "./WhatWeCreate/WhatWeCreate";
+import ArtOfSubtlety from "./ArtOfSubtlety/ArtOfSubtlety";
 
 const Home = () => {
 	const [isOpen,setIsOpen] = useState(true)
   return (
-		<div className="max-w-[1440px] mx-auto">
+    <div className="mx-auto max-w-[1440px]">
       <div className="">
         <Navbar isOpen={isOpen} setIsOpen={setIsOpen}></Navbar>
-
       </div>
-			<Header />
-			<main className="main-bg rounded-3xl mx-4 overflow-x-hidden">
-				<Hero />
-				<Portfolio/>
-				<WhatWeCreate/>
-				<AnyTask/>
-			</main>
-		</div>
-	);
+      <Header />
+      <main className="main-bg mx-4 overflow-x-hidden rounded-3xl">
+        <Hero />
+        <Portfolio />
+        <WhatWeCreate />
+        <ArtOfSubtlety />
+        <AnyTask />
+      </main>
+    </div>
+  );
 };
 
 export default Home;
