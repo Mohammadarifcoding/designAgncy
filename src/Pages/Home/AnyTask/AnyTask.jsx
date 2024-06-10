@@ -8,7 +8,7 @@ const AnyTask = () => {
   const [number,setNumber] = useState(6)
   return (
     <Container>
-      <div className="flex flex-col pb-20">
+      <div className="flex flex-col py-20">
          <h2 className="heading-1 text-center max-w-[900px] mx-auto pb-10" >
          Request any design & we get it done for you
          </h2>
