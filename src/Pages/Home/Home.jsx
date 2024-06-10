@@ -6,6 +6,7 @@ import { useState } from "react";
 import AnyTask from "./AnyTask/AnyTask";
 import WhatWeCreate from "./WhatWeCreate/WhatWeCreate";
 import ArtOfSubtlety from "./ArtOfSubtlety/ArtOfSubtlety";
+import SharkTank from "./SharkTank/SharkTank";
 
 const Home = () => {
 	const [isOpen,setIsOpen] = useState(true)
@@ -20,6 +21,7 @@ const Home = () => {
         <Portfolio />
         <WhatWeCreate />
         <ArtOfSubtlety />
+        <SharkTank/>
         <AnyTask />
       </main>
     </div>
