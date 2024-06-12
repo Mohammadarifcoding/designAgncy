@@ -34,20 +34,20 @@ const WhatWeCreate = () => {
     <Container className="px-0 md:px-0 lg:px-0">
       <div className="relative flex flex-col py-20">
         <img
-          className="absolute -top-24 left-0 w-[120px] md:-left-8 md:top-[180px] lg:-left-5 lg:top-0 lg:w-[180px] xl:left-0 xl:w-[200px]"
+          className="absolute -top-24 sm:left-0 -left-4 w-[100px] md:-left-8 md:top-[180px] lg:-left-5 lg:top-0 lg:w-[180px] xl:left-0 xl:w-[200px]"
           src={s1}
           alt="s1"
         />
         <img
-          className="absolute -right-14 -top-24 w-[130px] md:-right-10 md:-top-[130px] md:w-[150px] lg:-right-5 lg:top-0 lg:w-[180px] xl:right-0 xl:w-[200px]"
+          className="absolute sm:-right-14 -right-10 -top-24 w-[100px] md:-right-10 md:-top-[130px] md:w-[150px] lg:-right-5 lg:top-0 lg:w-[180px] xl:right-0 xl:w-[200px]"
           src={s2}
           alt="s2"
         />
 
-        <h2 className="heading-1 mx-auto max-w-[900px] pb-10 text-center">
+        <h2 className="heading-1 mx-auto max-w-[900px] px-1 pb-10 text-center">
           We Create Winning Designs That Makes You Grand
         </h2>
-        <p className="description-1 mx-auto my-4 max-w-[520px] text-center">
+        <p className="description-1 mx-auto  max-w-[520px] px-1 text-center">
           With over 5+ years of experience in the POD industry, we have the
           expertise to guide you to the perfect niche and identify winning
           designs.
