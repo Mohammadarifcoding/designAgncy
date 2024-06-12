@@ -8,26 +8,26 @@ import bannerRight from "/banner/banner-right.svg";
 const Hero = () => {
   return (
     <Container className="p-0 md:p-0 lg:p-0">
-      <div className=" z-0 py-20 relative overflow-hidden  ">
+      <div className=" z-0 pt-10 pb-20 relative overflow-hidden  ">
         <div className="absolute md:left-0 -left-10 -z-10 lg:mt-0 md:mt-[150px] sm:mt-[250px] mt-[350px]">
           <img
-            className="md:h-[250px]  sm:h-[190px]  xsm:h-[150px]  md:w-[170px] sm:w-[140px] w-[110px]"
+            className="md:h-[280px]  sm:h-[190px]  xsm:h-[150px]  md:w-[190px] sm:w-[140px] w-[100px]"
             src={bannerLeft}
             alt=""
           />
         </div>
         <div className="absolute md:right-0 -right-12 -z-10 lg:mt-[100px] md:mt-[150px] sm:mt-[200px] mt-[250px]">
           <img
-            className="md:h-[250px]  sm:h-[190px]  xsm:h-[150px] md:w-[170px] sm:w-[140px] w-[110px]"
+            className="md:h-[280px]  sm:h-[190px]  xsm:h-[150px] md:w-[190px] sm:w-[140px] w-[100px]"
             src={bannerRight}
             alt=""
           />
         </div>
         <div className="z-100 flex gap-4 flex-col">
-          <h2 className="heading-1 text-center max-w-[1000px] mx-auto">
+          <h2 className="heading-1 text-center max-w-[900px] mx-auto">
           Unlimited POD Designs on Subscriptions.
           </h2>
-          <p className="description-1 max-w-[800px] mx-auto text-center my-4">
+          <p className="description-1 max-w-[800px] mx-auto text-center mt-3 mb-4 px-2">
           Unlock Creative Freedom with Our Flexible POD Design Subscriptions – Cancel Anytime 
           </p>
           <div className="flex justify-center">
@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex justify-center text-[12px]">Available Now</div>
           <div className="flex justify-center my-10">
             <Button className='px-0  rounded-full' OuterClassName={'rounded-full mx-4'}>
-              <div className="flex  lg:max-w-[700px] md:max-w-[500px] sm:max-w-[490px] xsm:max-w-[350px] max-w-[250px]">
+              <div className="flex xl:max-w-[900px] lg:max-w-[800px] md:max-w-[600px] sm:max-w-[500px] xsm:max-w-[350px] max-w-[250px]">
                 <Marquee>
                   <div className="flex">
                   {BrandName.map((item, idx) => (
