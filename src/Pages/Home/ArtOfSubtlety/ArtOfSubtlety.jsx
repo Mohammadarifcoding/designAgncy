@@ -9,17 +9,17 @@ const ArtOfSubtlety = () => {
     return (
       <div className="relative py-20">
         <img
-          className="absolute  left-0 w-[120px] md:-left-8 top-[250px] lg:-left-5 lg:top-24 lg:w-[180px] xl:left-0 xl:w-[200px]"
+          className="absolute  left-0 w-[110px] md:-left-8 sm:top-[250px] top-[310px] lg:-left-5 lg:top-24 lg:w-[180px] xl:left-0 xl:w-[200px]"
           src={art1}
           alt="s1"
         />
         <img
-          className="absolute -right-14  w-[130px] md:-right-10 top-[250px] md:w-[150px] lg:-right-5 lg:top-24 lg:w-[180px] xl:right-0 xl:w-[200px]"
+          className="absolute -right-14  w-[120px] md:-right-10 sm:top-[250px] top-[310px] md:w-[150px] lg:-right-5 lg:top-24 lg:w-[180px] xl:right-0 xl:w-[200px]"
           src={art2}
           alt="s2"
         />
         <p className="text-center text-black/80">They said it best</p>
-        <h3 className="mx-auto max-w-[650px] py-10 text-center text-4xl font-medium">
+        <h3 className="mx-auto max-w-[650px] py-10 text-center sm:text-4xl xsm:text-3xl text-2xl font-medium px-1">
           “CreativeOnDemand shows that they know the art of subtlety.”
         </h3>
         <img className="mx-auto mb-10" src={bar} alt="bar" />
