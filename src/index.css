@@ -15,11 +15,11 @@
 
 
 .heading-1{
-    @apply md:text-6xl  xsm:text-4xl text-3xl font-medium 
+    @apply lg:text-7xl md:text-6xl  xsm:text-4xl text-3xl font-[580]
 }
 
 .description-1{
-    @apply xsm:text-xl text-lg
+    @apply sm:text-xl xsm:text-lg text-base
 }
 
 .main-bg {
