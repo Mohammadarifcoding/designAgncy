@@ -3,6 +3,7 @@ import Container from "../../../Shared/Container/Container";
 import AnyTaskData from "../../../Data/AnyTask";
 import PortfolioData from "../../../Data/Portfolio";
 import Button from "../../../Shared/Button/Button";
+import { Link } from "react-router-dom";
 
 const AnyTask = () => {
   const [number,setNumber] = useState(6)
@@ -28,7 +29,7 @@ const AnyTask = () => {
             }
            </div>
            <div className="mt-10 flex justify-center ">
-            {
+            {/* {
               number === 6 && <div onClick={()=>{setNumber(PortfolioData.length)}} className="cursor-pointer">
               <Button >See more work</Button>
               </div>
@@ -37,7 +38,10 @@ const AnyTask = () => {
               number !== 6 && <div onClick={()=>{setNumber(6)}} className="cursor-pointer">
               <Button >See Less Work</Button>
               </div>
-            }
+            } */}
+            <Link to='/portfolio'><div  className='cursor-pointer'>
+                   <Button>See More</Button>
+            </div></Link>
             
            </div>
       </div>

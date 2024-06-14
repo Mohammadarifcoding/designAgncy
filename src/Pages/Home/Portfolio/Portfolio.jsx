@@ -16,7 +16,7 @@ const Portfolio = () => {
         </div>
        
         </Marquee>
-        <div className='mx-auto flex justify-center cursor-pointer'>
+        <div  className='mx-auto flex justify-center cursor-pointer'>
          <Button>View More</Button>
      </div>
 
