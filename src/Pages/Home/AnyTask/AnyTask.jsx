@@ -21,13 +21,18 @@ const AnyTask = () => {
             }
            </div>
           
-           <div className="mt-7 flex gap-10 justify-center flex-wrap">
+           {/* <div className="mt-7 flex gap-10 justify-center flex-wrap">
            {
                 PortfolioData.slice(0,number).map((item)=>(
                     <img className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
                 ))
             }
+           </div> */}
+           <div className='flex justify-center  mt-16 '>
+           <iframe className='rounded-xl lg:w-[806px] lg:h-[453px] md:w-[645px] md:h-[362px] sm:w-[490px] sm:h-[318px] xsm:w-[343px] xsm:h-[222px] w-[274px] h-[177px]' src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
            </div>
+          
+
            <div className="mt-10 flex justify-center ">
             {/* {
               number === 6 && <div onClick={()=>{setNumber(PortfolioData.length)}} className="cursor-pointer">

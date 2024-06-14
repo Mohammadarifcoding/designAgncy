@@ -7,10 +7,10 @@ const Portfolio = () => {
     return (
         <div className='flex flex-col gap-7 pb-20'>
                 <Marquee>
-        <div className='flex gap-8 '>
+        <div className='flex  '>
             {
                 PortfolioData.map((item)=>(
-                    <img className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
+                    <img className=' md:w-[300px]  mx-4 w-[250px] rounded-2xl' src={item} alt="" />
                 ))
             }
         </div>
