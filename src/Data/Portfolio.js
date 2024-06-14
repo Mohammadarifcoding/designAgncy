@@ -46,7 +46,7 @@ import port45 from '/public/View more/tttt.jpg'
 
 
 const PortfolioData = [
- port1,port2,port3,port4,port5,port6,port7,port8,port9,port10,port11,port12,port13,port14,port15,
+ port1,port2,port3,port4,port5,port6,port7,port8,port9,port10,port11,port12,
 ]
 
 export const AllPortfolioData = [

@@ -12,7 +12,7 @@ const Home = () => {
  
   return (
     <div className="">
-        <Header />
+      
         <Hero />
         <Portfolio />
         <WhatWeCreate />

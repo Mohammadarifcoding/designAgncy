@@ -4,11 +4,12 @@ import AnyTaskData from '../../Data/AnyTask';
 import PortfolioData, { AllPortfolioData } from '../../Data/Portfolio';
 
 const OurCreation = () => {
+
     return (
         <Container>
         <div className="flex flex-col py-20">
            <h2 className="heading-1 text-center max-w-[900px] mx-auto pb-10" >
-           See Our Creations and Request for you
+           Checkout Our Creations
            </h2>
              <div className="flex flex-wrap sm:gap-5 xsm:gap-3 gap-2 justify-center items-center">
               {
@@ -18,10 +19,10 @@ const OurCreation = () => {
               }
              </div>
             
-             <div className="mt-7 flex gap-10 justify-center flex-wrap">
+             <div className="mt-7 grid gap-4 justify-center  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
              {
                   AllPortfolioData.map((item)=>(
-                      <img className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
+                      <img className='w-[290px] rounded-xl' src={item} alt="" />
                   ))
               }
              </div>
