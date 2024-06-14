@@ -6,12 +6,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Layout from "./Layout/Layout";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "/", element: <Home /> }],
+    children: [{ path: "/", element: <Home /> },{path:'/portfolio',element:<Portfolio/>}],
   },
 ]);
 
