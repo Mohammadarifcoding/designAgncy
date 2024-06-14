@@ -41,7 +41,8 @@ const Hero = () => {
                   <div className="flex">
                   {BrandName.map((item, idx) => (
                     <div key={idx} className="flex items-center gap-6">
-                      <div className="">{item.name}</div>
+                      <img className='max-w-[100px]' src={item.img} alt="" />
+                      {/* <div className="">{item.name}</div> */}
                       <div className="bg-blue-500 w-[7px] h-[7px] mr-6 rotate-45"></div>
                     </div>
                   ))}
