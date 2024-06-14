@@ -1,26 +1,45 @@
+import customcat from '/public/logobrand/customcat.png';
+import Etsy from '/public/logobrand/Etsy.png';
+import printful from '/public/logobrand/printful.png';
+import printify from '/public/logobrand/printifylogo.png';
+import redbubble from '/public/logobrand/redbubble.png';
+import shine from '/public/logobrand/shine.png';
+import Shopify from '/public/logobrand/Shopify.png';
+import teespring from '/public/logobrand/teespring.png';
+
 const BrandName = [
     {
-        name:'Printful'
+        name: 'Printful',
+        img: printful
     },
     {
-        name:'Printify'
+        name: 'Printify',
+        img: printify
     },
     {
-        name:'TeeSpring'
+        name: 'TeeSpring',
+        img: teespring
     },
     {
-        name:'Redbubble'
+        name: 'Redbubble',
+        img: redbubble
+    },
+    {
+        name: 'CustomCat',
+        img: customcat
+    },
+    {
+        name: 'Etsy',
+        img: Etsy
+    },{
+      name:'Shine',
+      img:shine
+    },
+    {
+        name: 'Shopify',
+        img: Shopify
     }
-    ,    {
-        name:'CustomCat'
-    }
-    ,
-    {
-        name:'Etsy'
-    },
-    {
-        name:'Shopify'
-    }
-]
+];
+
 
 export default BrandName
