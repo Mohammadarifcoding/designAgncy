@@ -7,6 +7,7 @@ import AnyTask from "./AnyTask/AnyTask";
 import WhatWeCreate from "./WhatWeCreate/WhatWeCreate";
 import ArtOfSubtlety from "./ArtOfSubtlety/ArtOfSubtlety";
 import SharkTank from "./SharkTank/SharkTank";
+import MembershipBenefits from "./MembershipBenefits/MembershipBenefits";
 
 const Home = () => {
  
@@ -18,6 +19,7 @@ const Home = () => {
         <WhatWeCreate />
         <ArtOfSubtlety />
         <SharkTank />
+        <MembershipBenefits/>
         <AnyTask />
     </div>
   );
