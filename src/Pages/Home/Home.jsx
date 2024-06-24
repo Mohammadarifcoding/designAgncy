@@ -8,6 +8,7 @@ import WhatWeCreate from "./WhatWeCreate/WhatWeCreate";
 import ArtOfSubtlety from "./ArtOfSubtlety/ArtOfSubtlety";
 import SharkTank from "./SharkTank/SharkTank";
 import MembershipBenefits from "./MembershipBenefits/MembershipBenefits";
+import Caq from "./CAQ/Caq";
 
 const Home = () => {
  
@@ -21,6 +22,7 @@ const Home = () => {
         <SharkTank />
         <MembershipBenefits/>
         <AnyTask />
+        <Caq />
     </div>
   );
 };
