@@ -22,7 +22,7 @@ const OurCreation = () => {
              <div className="mt-7 grid gap-4 justify-center  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
              {
                   AllPortfolioData.map((item)=>(
-                      <img className='w-[290px] rounded-xl' src={item} alt="" />
+                      <img loading='lazy' className='w-[290px] rounded-xl' src={item} alt="" />
                   ))
               }
              </div>
