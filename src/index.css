@@ -15,7 +15,7 @@
 
 
 .heading-1{
-    @apply lg:text-7xl md:text-6xl  xsm:text-4xl text-3xl font-[580]
+    @apply  md:text-6xl  xsm:text-4xl text-3xl font-[590]
 }
 
 .description-1{

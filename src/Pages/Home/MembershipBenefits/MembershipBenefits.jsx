@@ -25,31 +25,37 @@ const MembershipBenefits = () => {
     {
       bg: ms1,
       lottie: <DashboardLottie />,
+      title: "Design board",
       text: "Subscribe to a plan & request as many designs as you’d like.",
     },
     {
       bg: ms2,
       lottie: <BoltLottie />,
+      title: "Lightning fast delivery",
       text: "Receive your design within two business days on average.",
     },
     {
       bg: ms3,
       lottie: <NoteLottie />,
+      title: "Fixed monthly rate",
       text: "We'll revise the designs until you're 100% satisfied.",
     },
     {
       bg: ms4,
       lottie: <TickLottie />,
+      title: "Top-notch quality",
       text: "Subscribe to a plan & request as many designs as you’d like.",
     },
     {
       bg: ms5,
       lottie: <UpDownLottie />,
+      title: "Flexible and scalable",
       text: "Receive your design within two business days on average.",
     },
     {
       bg: ms6,
       lottie: <FingerLottie />,
+      title: "Unique and all yours",
       text: "We'll revise the designs until you're 100% satisfied.",
     },
   ];
@@ -69,10 +75,10 @@ const MembershipBenefits = () => {
             alt="m2"
           />
 
-          <h2 className="heading-1 mx-auto max-w-[900px] px-1 pb-10 text-center z-10">
+          <h2 className="heading-1 z-10 mx-auto max-w-[900px] px-1 pb-10 text-center">
             Membership benefits
           </h2>
-          <p className="description-1 mx-auto max-w-[520px] px-1 text-center z-10">
+          <p className="description-1 z-10 mx-auto max-w-[520px] px-1 text-center">
             Perks so good you'll never need to go anywhere else for your design.
             Seriously.
           </p>
@@ -89,6 +95,7 @@ const MembershipBenefits = () => {
                 >
                   {item?.lottie}
                 </div>
+                <h1 className="text-3xl font-[580] pt-10 text-center"> {item?.title}</h1>
                 <p className="description-1 mx-auto max-w-[320px] py-5 text-center opacity-90">
                   {item?.text}
                 </p>
