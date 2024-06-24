@@ -10,7 +10,7 @@ const Portfolio = () => {
         <div className='flex  '>
             {
                 PortfolioData.map((item)=>(
-                    <img className=' md:w-[300px]  mx-4 w-[250px] rounded-2xl bg-gray-400' src={item} alt="" />
+                    <img loading='lazy' className=' md:w-[300px]  mx-4 w-[250px] rounded-2xl bg-gray-400' src={item} alt="" />
                 ))
             }
         </div>
