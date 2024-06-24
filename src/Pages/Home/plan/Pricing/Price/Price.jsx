@@ -11,7 +11,7 @@ const Price = ({ data }) => {
     <div className="mt-3">
       <h2 className="flex items-end">
         <span className="text-3xl font-[580] xsm:text-4xl md:text-5xl">
-          $4,99
+          ${price}
         </span>
         /m
       </h2>
@@ -24,15 +24,16 @@ const Price = ({ data }) => {
       <div className='mb-5'>
        <h4 className=' text-gray-700  mb-6'>What's included</h4>
       
-      <div className='grid xl:grid-cols-2 grid-cols-1'>
+      <div className=''>
       {features.map((item)=>(
         <div className='text-gray-700  mb-1 flex gap-2 items-center'> <span className='bg-black h-[6px] w-[6px] rounded-full'></span> {item}</div>
        ))}
         </div> 
       </div>
-      <div className='flex justify-center'>
+      <a href={paymentLink} target='_blank'> <div className='flex justify-center'>
       <Button>Get Started</Button>
-      </div>
+      </div></a>
+     
        
     </div>
   );
