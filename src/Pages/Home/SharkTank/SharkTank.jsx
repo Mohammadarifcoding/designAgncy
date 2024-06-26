@@ -21,7 +21,7 @@ const SharkTank = () => {
   ];
   return (
     <Container>
-      <div className="my-20 flex flex-col justify-center gap-10 lg:flex-row">
+      <div className="my-20 flex flex-col items-center justify-center gap-10 lg:flex-row">
         {/* <div className="rounded-xl bg-white p-5 sm:p-8 md:p-16">
           <h2 className="text-2xl font-medium sm:text-3xl md:text-4xl">
             "Design is everything, and these guys have nailed it."
