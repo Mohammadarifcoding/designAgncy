@@ -8,46 +8,56 @@ import bannerRight from "/banner/banner-right.svg";
 const Hero = () => {
   return (
     <Container className="p-0 md:p-0 lg:p-0">
-      <div className=" z-0 pt-10 pb-20 relative overflow-hidden  ">
-        <div className="absolute md:left-0 -left-10 -z-10 lg:mt-0 md:mt-[150px] sm:mt-[250px] mt-[350px]">
+      <div className="relative z-0 overflow-hidden pb-20 pt-10">
+        <div className="absolute -left-10 -z-10 mt-[350px] sm:mt-[250px] md:left-0 md:mt-[150px] lg:mt-0">
           <img
-            className="md:h-[280px]  sm:h-[190px]  xsm:h-[150px]  md:w-[190px] sm:w-[140px] w-[100px]"
+            loading="lazy"
+            className="w-[100px] xsm:h-[150px] sm:h-[190px] sm:w-[140px] md:h-[280px] md:w-[190px]"
             src={bannerLeft}
             alt=""
           />
         </div>
-        <div className="absolute md:right-0 -right-12 -z-10 lg:mt-[100px] md:mt-[150px] sm:mt-[200px] mt-[250px]">
+        <div className="absolute -right-12 -z-10 mt-[250px] sm:mt-[200px] md:right-0 md:mt-[150px] lg:mt-[100px]">
           <img
-            className="md:h-[280px]  sm:h-[190px]  xsm:h-[150px] md:w-[190px] sm:w-[140px] w-[100px]"
+            loading="lazy"
+            className="w-[100px] xsm:h-[150px] sm:h-[190px] sm:w-[140px] md:h-[280px] md:w-[190px]"
             src={bannerRight}
             alt=""
           />
         </div>
-        <div className="z-100 flex gap-4 flex-col">
-          <h2 className="heading-1 text-center max-w-[900px] mx-auto">
-          Unlimited POD Designs on Subscriptions.
+        <div className="z-100 flex flex-col gap-4">
+          <h2 className="heading-1 mx-auto max-w-[900px] text-center">
+            Unlimited POD Designs on Subscriptions.
           </h2>
-          <p className="description-1 max-w-[800px] mx-auto text-center mt-3 mb-4 px-2">
-          Unlock Creative Freedom with Our Flexible POD Design Subscriptions – Cancel Anytime 
+          <p className="description-1 mx-auto mb-4 mt-3 max-w-[800px] px-2 text-center">
+            Unlock Creative Freedom with Our Flexible POD Design Subscriptions –
+            Cancel Anytime
           </p>
           <div className="flex justify-center">
             <Button>See Plans</Button>
           </div>
           <div className="flex justify-center text-[12px]">Available Now</div>
-          <div className="flex justify-center my-10">
-            <Button className='px-0  rounded-full' OuterClassName={'rounded-full mx-4'}>
-              <div className="flex xl:max-w-[900px] lg:max-w-[800px] md:max-w-[600px] sm:max-w-[500px] xsm:max-w-[350px] max-w-[250px]">
+          <div className="my-10 flex justify-center">
+            <Button
+              className="rounded-full px-0"
+              OuterClassName={"rounded-full mx-4"}
+            >
+              <div className="flex max-w-[250px] xsm:max-w-[350px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[800px] xl:max-w-[900px]">
                 <Marquee>
                   <div className="flex">
-                  {BrandName.map((item, idx) => (
-                    <div key={idx} className="flex items-center gap-6">
-                      <img className='max-w-[100px]' src={item.img} alt="" />
-                      {/* <div className="">{item.name}</div> */}
-                      <div className="bg-blue-500 w-[7px] h-[7px] mr-6 rotate-45"></div>
-                    </div>
-                  ))}
+                    {BrandName.map((item, idx) => (
+                      <div key={idx} className="flex items-center gap-6">
+                        <img
+                          loading="lazy"
+                          className="max-w-[100px]"
+                          src={item.img}
+                          alt=""
+                        />
+                        {/* <div className="">{item.name}</div> */}
+                        <div className="mr-6 h-[7px] w-[7px] rotate-45 bg-blue-500"></div>
+                      </div>
+                    ))}
                   </div>
-                 
                 </Marquee>
               </div>
             </Button>
@@ -59,4 +69,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

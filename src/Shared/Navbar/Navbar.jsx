@@ -1,4 +1,3 @@
-import { useState } from "react";
 import logoIcon from "/logo/logoIcon.png";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
@@ -17,6 +16,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
           className="order-4 flex h-[60px] w-[60px] cursor-pointer items-center justify-center rounded-full border border-white bg-[#292929] md:order-first md:h-full md:w-[70px] md:border-none md:p-3"
         >
           <img
+            loading="lazy"
             className="h-[20px] w-[20px] object-cover md:h-[28px] md:w-[25px]"
             src={logoIcon}
             alt="Logo Icon"
