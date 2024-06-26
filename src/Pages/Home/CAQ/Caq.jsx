@@ -57,7 +57,7 @@ const Caq = () => {
         alt="c1"
       />
       <Container>
-        <div className="relative my-20 flex w-full flex-wrap justify-around gap-20 lg:gap-10">
+        <div className="relative mb-20 lg:mt-32 mt-20 flex w-full flex-wrap items-center justify-around gap-20 lg:gap-10">
           {/* accordion here  */}
           <div className="w-full lg:max-w-[50%]">
             <h2 className="heading-1 z-10 max-w-[900px] px-1 pb-10">

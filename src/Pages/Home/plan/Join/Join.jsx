@@ -3,7 +3,7 @@ import BookCall from "./BookCall/BookCall";
 
 const Join = () => {
   return (
-    <div className="relative flex h-[500px] w-full rounded-xl shadow-2xl md:w-[400px] lg:h-[680px]">
+    <div className="relative flex h-[500px] w-full rounded-xl shadow-2xl max-w-[500px] md:w-[500px] lg:h-[680px]">
       <img
         loading="lazy"
         className="absolute right-0 -z-0 w-[80px] rounded-r-xl xsm:w-[100px] sm:w-[120px] md:w-[130px]"
