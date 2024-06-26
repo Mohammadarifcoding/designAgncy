@@ -29,7 +29,7 @@ const AnyTask = () => {
                 ))
             }
            </div> */}
-        <div className="mt-16 flex justify-center">
+        {/* <div className="mt-16 flex justify-center">
           <iframe
             className="h-[177px] w-[274px] rounded-xl xsm:h-[222px] xsm:w-[343px] sm:h-[318px] sm:w-[490px] md:h-[362px] md:w-[645px] lg:h-[453px] lg:w-[806px]"
             src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
@@ -39,7 +39,7 @@ const AnyTask = () => {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
-        </div>
+        </div> */}
 
         <div className="mt-10 flex justify-center">
           {/* {

@@ -21,8 +21,8 @@ const SharkTank = () => {
   ];
   return (
     <Container>
-      <div className="my-20 flex flex-col justify-center gap-10 lg:flex-row">
-        <div className="rounded-xl bg-white p-5 sm:p-8 md:p-16">
+      <div className="my-20 flex flex-col items-center justify-center gap-10 lg:flex-row">
+        {/* <div className="rounded-xl bg-white p-5 sm:p-8 md:p-16">
           <h2 className="text-2xl font-medium sm:text-3xl md:text-4xl">
             "Design is everything, and these guys have nailed it."
           </h2>
@@ -40,7 +40,20 @@ const SharkTank = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
+<div className=" flex justify-center">
+  <iframe
+    className="h-[150.45px] w-[258.9px] rounded-xl xsm:h-[188.7px] xsm:w-[291.55px] sm:h-[270.3px] sm:w-[416.5px] md:h-[307.7px] md:w-[548.25px] lg:h-[385.05px] lg:w-[685.1px]"
+    src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
+    title="YouTube video player"
+    frameBorder={0}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
+
+
         <div className="flex flex-col gap-10">
           {SharkTankData.map((item) => (
             <div className="flex flex-col gap-5">
