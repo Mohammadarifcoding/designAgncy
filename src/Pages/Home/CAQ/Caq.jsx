@@ -69,7 +69,7 @@ const Caq = () => {
                       onClick={() => toggle(idx)}
                       className="flex justify-between font-medium text-black"
                     >
-                      <h1 className="pb-2 text-lg  sm:text-xl">{PerAccordion.title}</h1>
+                      <h1 className="pb-2 text-lg cursor-pointer sm:text-xl">{PerAccordion.title}</h1>
                       <div className="size-[10px] cursor-pointer p-2 text-lg">
                         <IoIosArrowDown
                           className={`${isOpen === idx ? "rotate-180" : ""} duration-300`}
@@ -79,7 +79,7 @@ const Caq = () => {
                     <div
                       className={`grid overflow-hidden text-gray-800 transition-all duration-300 ease-in-out dark:text-gray-300 ${isOpen === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
                     >
-                      <div className="overflow-hidden text-sm sm:text-base pr-16">
+                      <div className="overflow-hidden text-gray-500 text-sm sm:text-base pr-16">
                         {PerAccordion.description}
                       </div>
                     </div>

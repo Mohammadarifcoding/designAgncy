@@ -23,8 +23,9 @@ const Home = () => {
         <SharkTank />
         <MembershipBenefits/>
         <AnyTask />
-        <Caq />
         <Plan/>
+        <Caq />
+
     </div>
   );
 };
