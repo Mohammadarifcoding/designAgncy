@@ -38,8 +38,6 @@ const pricingPlans = [
       "Access to 5000+ Premade Design Library",
       "Unlimited POD Designs",
       "Unlimited users",
-      "Design Research",
-      "Niche Research",
       "Cancel anytime",
       "15 Day Money Back Guarantee",
     ],

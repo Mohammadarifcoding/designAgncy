@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Container from "../../../Shared/Container/Container";
-import cp1 from '../../.../../../../public/Caq/cp1.png'
-import c1 from '../../.../../../../public/Caq/c1.svg'
-import Button from "../../../Shared/Button/Button";
+
+import c1 from "../../.../../../../public/Caq/c1.svg";
+import BookCall from "./BookCall";
 
 const Caq = () => {
   const [isOpen, setIsOpen] = useState(0);
@@ -45,66 +45,56 @@ const Caq = () => {
     },
   ];
   const toggle = (idx) => {
-    setIsOpen((prevIdx) => (prevIdx === idx ? null : idx))
+    setIsOpen((prevIdx) => (prevIdx === idx ? null : idx));
   };
 
-    return (
-      <div className="relative">
-        <img
-          className="absolute right-0 -bottom-16"
-          src={c1}
-          alt="c1"
-        />
-        <Container>
-          <div className="relative my-20 flex flex-wrap gap-20 lg:gap-10 w-full justify-around">
-            {/* accordion here  */}
-            <div className="w-full lg:max-w-[50%]">
-              <h2 className="heading-1 z-10 max-w-[900px] px-1 pb-10">
-                Commonly asked questions
-              </h2>
-              <div>
-                {dataArr.map((PerAccordion, idx) => (
-                  <div key={idx} className="border-gray-500/50 py-3">
-                    <div
-                      onClick={() => toggle(idx)}
-                      className="flex justify-between font-medium text-black"
-                    >
-                      <h1 className="pb-2 text-lg  sm:text-xl">{PerAccordion.title}</h1>
-                      <div className="size-[10px] cursor-pointer p-2 text-lg">
-                        <IoIosArrowDown
-                          className={`${isOpen === idx ? "rotate-180" : ""} duration-300`}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className={`grid overflow-hidden text-gray-800 transition-all duration-300 ease-in-out dark:text-gray-300 ${isOpen === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
-                    >
-                      <div className="overflow-hidden text-sm sm:text-base pr-16">
-                        {PerAccordion.description}
-                      </div>
+  return (
+    <div className="relative">
+      <img
+        loading="lazy"
+        className="absolute -bottom-16 right-0"
+        src={c1}
+        alt="c1"
+      />
+      <Container>
+        <div className="relative my-20 flex w-full flex-wrap justify-around gap-20 lg:gap-10">
+          {/* accordion here  */}
+          <div className="w-full lg:max-w-[50%]">
+            <h2 className="heading-1 z-10 max-w-[900px] px-1 pb-10">
+              Commonly asked questions
+            </h2>
+            <div>
+              {dataArr.map((PerAccordion, idx) => (
+                <div key={idx} className="border-gray-500/50 py-3">
+                  <div
+                    onClick={() => toggle(idx)}
+                    className="flex justify-between font-medium text-black"
+                  >
+                    <h1 className="cursor-pointer pb-2 text-lg sm:text-xl">
+                      {PerAccordion.title}
+                    </h1>
+                    <div className="size-[10px] cursor-pointer p-2 text-lg">
+                      <IoIosArrowDown
+                        className={`${isOpen === idx ? "rotate-180" : ""} duration-300`}
+                      />
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="">
-              <div className="flex w-full lg:w-[430px] flex-col items-center justify-center gap-y-4 rounded-lg bg-white p-14">
-                <img className="w-[150px]" src={cp1} alt="Avatar" />
-                <h1 className="pt-10 text-center text-3xl font-[599]">
-                  Book a 15-minute intro call
-                </h1>
-                <Button className="">Book now</Button>
-                <h6 className="mt-4">
-                  Prefer to email?{" "}
-                  <span className="text-blue-500">hello@designjoy.com</span>
-                </h6>
-              </div>
+                  <div
+                    className={`grid overflow-hidden text-gray-800 transition-all duration-300 ease-in-out dark:text-gray-300 ${isOpen === idx ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
+                  >
+                    <div className="overflow-hidden pr-16 text-sm text-gray-500 sm:text-base">
+                      {PerAccordion.description}
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        </Container>
-      </div>
-    );
-}
+          <BookCall />
+        </div>
+      </Container>
+    </div>
+  );
+};
 
-export default Caq
+export default Caq;

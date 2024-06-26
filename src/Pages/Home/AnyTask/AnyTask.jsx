@@ -1,40 +1,48 @@
 import React, { useState } from "react";
-import Container from "../../../Shared/Container/Container";
-import AnyTaskData from "../../../Data/AnyTask";
-import PortfolioData from "../../../Data/Portfolio";
-import Button from "../../../Shared/Button/Button";
 import { Link } from "react-router-dom";
+import AnyTaskData from "../../../Data/AnyTask";
+import Button from "../../../Shared/Button/Button";
+import Container from "../../../Shared/Container/Container";
 
 const AnyTask = () => {
-  const [number,setNumber] = useState(6)
+  const [number, setNumber] = useState(6);
   return (
     <Container>
       <div className="flex flex-col py-20">
-         <h2 className="heading-1 text-center max-w-[900px] mx-auto pb-10" >
-         Request any design & we get it done for you
-         </h2>
-           <div className="flex flex-wrap sm:gap-5 xsm:gap-3 gap-2 justify-center items-center">
-            {
-                AnyTaskData.map((item)=>(
-                    <div className="lg:px-6 lg:py-5 md:px-5 md:py-3 px-3 py-2  rounded-lg bg-white lg:text-xl md:text-lg sm:text-base text-sm  flex items-center  gap-2 shadow-lg cursor-pointer group"> <item.icon className="lg:text-2xl md:text-xl sm:text-lg text-base group-hover:rotate-180 transition-all duration-1000"/> {item.title} </div>
-                ))
-            }
-           </div>
-          
-           {/* <div className="mt-7 flex gap-10 justify-center flex-wrap">
+        <h2 className="heading-1 mx-auto max-w-[900px] pb-10 text-center">
+          Request any design & we get it done for you
+        </h2>
+        <div className="flex flex-wrap items-center justify-center gap-2 xsm:gap-3 sm:gap-5">
+          {AnyTaskData.map((item) => (
+            <div className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
+              {" "}
+              <item.icon className="text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl" />{" "}
+              {item.title}{" "}
+            </div>
+          ))}
+        </div>
+
+        {/* <div className="mt-7 flex gap-10 justify-center flex-wrap">
            {
                 PortfolioData.slice(0,number).map((item)=>(
-                    <img className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
+                    <img loading="lazy" className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
                 ))
             }
            </div> */}
-           <div className='flex justify-center  mt-16 '>
-           <iframe className='rounded-xl lg:w-[806px] lg:h-[453px] md:w-[645px] md:h-[362px] sm:w-[490px] sm:h-[318px] xsm:w-[343px] xsm:h-[222px] w-[274px] h-[177px]' src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-           </div>
-          
+        <div className="mt-16 flex justify-center">
+          <iframe
+            className="h-[177px] w-[274px] rounded-xl xsm:h-[222px] xsm:w-[343px] sm:h-[318px] sm:w-[490px] md:h-[362px] md:w-[645px] lg:h-[453px] lg:w-[806px]"
+            src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
+            title="YouTube video player"
+            frameBorder={0}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
 
-           <div className="mt-10 flex justify-center ">
-            {/* {
+        <div className="mt-10 flex justify-center">
+          {/* {
               number === 6 && <div onClick={()=>{setNumber(PortfolioData.length)}} className="cursor-pointer">
               <Button >See more work</Button>
               </div>
@@ -44,11 +52,12 @@ const AnyTask = () => {
               <Button >See Less Work</Button>
               </div>
             } */}
-            <Link to='/portfolio'><div  className='cursor-pointer'>
-                   <Button>See More</Button>
-            </div></Link>
-            
-           </div>
+          <Link to="/portfolio">
+            <div className="cursor-pointer">
+              <Button>See More</Button>
+            </div>
+          </Link>
+        </div>
       </div>
     </Container>
   );

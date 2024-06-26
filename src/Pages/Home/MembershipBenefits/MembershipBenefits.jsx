@@ -1,24 +1,22 @@
 import React from "react";
-import Container from "../../../Shared/Container/Container";
-import {
-  DashboardLottie,
-  BoltLottie,
-  NoteLottie,
-  TickLottie,
-  UpDownLottie,
-  FingerLottie,
-} from "../../../LottieReact/LottieReact";
+import m1 from "../../../../public/MembershipBenefits/m1.svg";
+import m2 from "../../../../public/MembershipBenefits/m2.svg";
 import ms1 from "../../../../public/MembershipBenefits/ms1.svg";
 import ms2 from "../../../../public/MembershipBenefits/ms2.svg";
 import ms3 from "../../../../public/MembershipBenefits/ms3.svg";
 import ms4 from "../../../../public/MembershipBenefits/ms4.svg";
 import ms5 from "../../../../public/MembershipBenefits/ms5.svg";
 import ms6 from "../../../../public/MembershipBenefits/ms6.svg";
+import {
+  BoltLottie,
+  DashboardLottie,
+  FingerLottie,
+  NoteLottie,
+  TickLottie,
+  UpDownLottie,
+} from "../../../LottieReact/LottieReact";
+import Container from "../../../Shared/Container/Container";
 import bar from "/bar.svg";
-import m1 from "../../../../public/MembershipBenefits/m1.svg";
-import m2 from "../../../../public/MembershipBenefits/m2.svg";
-import Button from "../../../Shared/Button/Button";
-
 
 const MembershipBenefits = () => {
   const data = [
@@ -61,15 +59,17 @@ const MembershipBenefits = () => {
   ];
   return (
     <div>
-      <img className="mx-auto mb-10" src={bar} alt="bar" />
+      <img loading="lazy" className="mx-auto mb-10" src={bar} alt="bar" />
       <Container className="px-0 md:px-0 lg:px-0">
         <div className="relative flex flex-col py-20">
           <img
+            loading="lazy"
             className="absolute -left-4 -top-24 z-0 w-[100px] sm:left-0 md:-left-8 md:top-[180px] lg:-left-5 lg:-top-20 lg:w-[180px] xl:left-0 xl:w-[140px]"
             src={m1}
             alt="m1"
           />
           <img
+            loading="lazy"
             className="absolute -top-24 right-0 z-0 w-[140px] sm:-right-2 md:-right-10 md:-top-[130px] md:w-[150px] lg:-right-5 lg:top-16 lg:w-[180px] xl:right-0 xl:w-[240px]"
             src={m2}
             alt="m2"
@@ -86,6 +86,7 @@ const MembershipBenefits = () => {
             {data?.map((item, idx) => (
               <div key={idx} className="relative mt-10">
                 <img
+                  loading="lazy"
                   className="mx-auto w-[110px]"
                   src={item?.bg}
                   alt={item?.text}
@@ -95,14 +96,17 @@ const MembershipBenefits = () => {
                 >
                   {item?.lottie}
                 </div>
-                <h1 className="text-3xl font-[580] pt-10 text-center"> {item?.title}</h1>
+                <h1 className="pt-10 text-center text-3xl font-[580]">
+                  {" "}
+                  {item?.title}
+                </h1>
                 <p className="description-1 mx-auto max-w-[320px] py-5 text-center opacity-90">
                   {item?.text}
                 </p>
               </div>
             ))}
           </div>
-          <img className="mx-auto mt-24" src={bar} alt="bar" />
+          <img loading="lazy" className="mx-auto mt-24" src={bar} alt="bar" />
         </div>
       </Container>
     </div>
