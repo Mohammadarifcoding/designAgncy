@@ -20,7 +20,7 @@ const OurCreation = () => {
           ))}
         </div>
 
-        <div className="mt-7 grid grid-cols-1 justify-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-7 grid grid-cols-2 justify-center gap-4  md:grid-cols-3 lg:grid-cols-4">
           {AllPortfolioData.map((item) => (
             <img
               loading="lazy"

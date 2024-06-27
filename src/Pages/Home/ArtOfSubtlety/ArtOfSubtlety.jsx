@@ -32,11 +32,7 @@ const ArtOfSubtlety = () => {
         CreativeOnDemand replaces unreliable freelancers for one flat monthly
         fee, with designs delivered so fast that it will blow your mind.
       </p>
-      <a href="#plans">
-      <div className="mt-10 flex cursor-pointer justify-center">
-        <Button>See Plans</Button>
-      </div>
-      </a>
+
 
     </div>
   );
