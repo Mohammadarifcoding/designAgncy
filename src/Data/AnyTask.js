@@ -18,6 +18,8 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { SlNotebook } from "react-icons/sl";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { GiHeartNecklace } from "react-icons/gi";
+import dogTag from '/AnyTask/dog_tag.png'
+import bracelet from '/AnyTask/bracelet.png'
 const AnyTaskData = [
   {
     title: "Message Card",
@@ -95,10 +97,22 @@ const AnyTaskData = [
     title: "Tote Notebook",
     icon: MdOutlineShoppingBag,
   },
-  {
-    title: "more +",
-    icon: MdOutlineMore,
-  },
+
 ];
+
+export const extraImg = [
+  {
+    title: "Bracelets",
+    icon: bracelet,
+  },
+  {
+    title: "Dog Tags",
+    icon: dogTag,
+  },
+]
+export const lastImg =   [{
+  title: "more +",
+  icon: MdOutlineMore,
+}]
 
 export default AnyTaskData;
