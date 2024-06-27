@@ -10,6 +10,7 @@ import SharkTank from "./SharkTank/SharkTank";
 import MembershipBenefits from "./MembershipBenefits/MembershipBenefits";
 import Caq from "./CAQ/Caq";
 import Plan from "./plan/Plan";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
  
@@ -25,7 +26,7 @@ const Home = () => {
         <AnyTask />
         <Plan/>
         <Caq />
-
+        <Footer/>
     </div>
   );
 };
