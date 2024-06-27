@@ -2,7 +2,7 @@ import React from "react";
 
 const BookCall = () => {
   return (
-    <a className="" target="_blank" href="https://calendly.com/nabirasek/30min">
+    <a className="" target="_blank" href="https://calendly.com/ateeqmorshed/30min">
       <div className="inner-shadow rounded-xl border-t-2 border-white bg-gradient-to-b from-black to-gray-800 text-white transition-all duration-500 hover:from-[#292929] hover:to-gray-900 hover:shadow-custom-hover">
         <div className="flex w-auto flex-col items-center gap-3 rounded-lg border border-gray-700 p-4 shadow-xl sm:flex-row">
           <div className="flex flex-col gap-3">

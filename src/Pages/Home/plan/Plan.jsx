@@ -6,7 +6,7 @@ import Pricing from "./Pricing/Pricing";
 const Plan = () => {
   return (
     <Container>
-      <div className="flex flex-col lg:flex-row items-center  my-20 justify-center gap-10">
+      <div id="plans" className="flex flex-col lg:flex-row items-center  my-20 justify-center gap-10">
         <Join></Join>
         <Pricing></Pricing>
       </div>

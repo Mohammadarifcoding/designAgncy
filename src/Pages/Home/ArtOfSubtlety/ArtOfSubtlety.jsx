@@ -3,6 +3,7 @@ import Button from "../../../Shared/Button/Button";
 import art1 from "/ArtOfSubtlety/art1.svg";
 import art2 from "/ArtOfSubtlety/art2.svg";
 import bar from "/bar.svg";
+import { Link } from "react-router-dom";
 
 const ArtOfSubtlety = () => {
   return (
@@ -31,9 +32,8 @@ const ArtOfSubtlety = () => {
         CreativeOnDemand replaces unreliable freelancers for one flat monthly
         fee, with designs delivered so fast that it will blow your mind.
       </p>
-      <div className="mt-10 flex justify-center">
-        <Button>See Plans</Button>
-      </div>
+
+
     </div>
   );
 };

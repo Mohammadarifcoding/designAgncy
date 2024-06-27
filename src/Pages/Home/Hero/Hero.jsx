@@ -4,6 +4,7 @@ import Button from "../../../Shared/Button/Button";
 import Container from "../../../Shared/Container/Container";
 import bannerLeft from "/banner/banner-left.svg";
 import bannerRight from "/banner/banner-right.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -33,9 +34,13 @@ const Hero = () => {
             Unlock Creative Freedom with Our Flexible POD Design Subscriptions –
             Cancel Anytime
           </p>
-          <div className="flex justify-center">
-            <Button>See Plans</Button>
-          </div>
+          <a href="#plans">
+            {" "}
+            <div className="mt-10 flex cursor-pointer justify-center">
+              <Button>See Plans</Button>
+            </div>
+          </a>
+
           <div className="flex justify-center text-[12px]">Available Now</div>
           <div className="my-10 flex justify-center">
             <Button

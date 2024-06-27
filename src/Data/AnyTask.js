@@ -9,6 +9,17 @@ import { BiBlanket } from "react-icons/bi";
 import { PiPaintBrush } from "react-icons/pi";
 import { BsStopwatch } from "react-icons/bs";
 import { MdOutlineMore } from "react-icons/md";
+import { RiEmojiStickerLine } from "react-icons/ri";
+import { GiCandleLight } from "react-icons/gi";
+import { PiHoodie } from "react-icons/pi";
+import { GiTargetPoster } from "react-icons/gi";
+import { MdOutlineEventSeat } from "react-icons/md";
+import { IoIosPhonePortrait } from "react-icons/io";
+import { SlNotebook } from "react-icons/sl";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { GiHeartNecklace } from "react-icons/gi";
+import dogTag from '/AnyTask/dog_tag.png'
+import bracelet from '/AnyTask/bracelet.png'
 const AnyTaskData = [
   {
     title: "Message Card",
@@ -51,9 +62,57 @@ const AnyTaskData = [
     icon: BsStopwatch,
   },
   {
-    title: "more +",
-    icon: MdOutlineMore,
-  }
+    title: "Photo-engraved Jewelry",
+    icon:GiHeartNecklace,
+  },
+  {
+    title: "Stickers",
+    icon: RiEmojiStickerLine,
+  },
+  {
+    title: "Candle",
+    icon: GiCandleLight,
+  },
+  {
+    title: "Hoodies",
+    icon: PiHoodie ,
+  },
+  {
+    title: "Posters",
+    icon: GiTargetPoster,
+  },
+  {
+    title: "Seat Covers",
+    icon: MdOutlineEventSeat,
+  },
+  {
+    title: "Phone cases",
+    icon: IoIosPhonePortrait,
+  },
+  {
+    title: "Spiral Notebook",
+    icon: SlNotebook,
+  },
+  {
+    title: "Tote Notebook",
+    icon: MdOutlineShoppingBag,
+  },
+
 ];
 
-export default AnyTaskData
+export const extraImg = [
+  {
+    title: "Bracelets",
+    icon: bracelet,
+  },
+  {
+    title: "Dog Tags",
+    icon: dogTag,
+  },
+]
+export const lastImg =   [{
+  title: "more +",
+  icon: MdOutlineMore,
+}]
+
+export default AnyTaskData;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import AnyTaskData from "../../../Data/AnyTask";
+import AnyTaskData, { extraImg, lastImg } from "../../../Data/AnyTask";
 import Button from "../../../Shared/Button/Button";
 import Container from "../../../Shared/Container/Container";
 
@@ -19,6 +19,23 @@ const AnyTask = () => {
               <item.icon className="text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl" />{" "}
               {item.title}{" "}
             </div>
+          ))}
+          {extraImg.map((item) => (
+            <div className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
+              {" "}
+              <img
+                src={item.icon}
+                className="md:w-[25px] w-[20px] text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl"
+              />{" "}
+              {item.title}{" "}
+            </div>
+          ))}
+          {lastImg.map((item) => (
+             <div className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
+             {" "}
+             <item.icon className="text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl" />{" "}
+             {item.title}{" "}
+           </div>
           ))}
         </div>
 
@@ -54,7 +71,7 @@ const AnyTask = () => {
             } */}
           <Link to="/portfolio">
             <div className="cursor-pointer">
-              <Button>See More</Button>
+              <Button>View Works</Button>
             </div>
           </Link>
         </div>

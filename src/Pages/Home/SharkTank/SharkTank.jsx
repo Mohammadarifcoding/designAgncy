@@ -41,18 +41,17 @@ const SharkTank = () => {
             </div>
           </div>
         </div> */}
-<div className=" flex justify-center">
-  <iframe
-    className="h-[150.45px] w-[258.9px] rounded-xl xsm:h-[188.7px] xsm:w-[291.55px] sm:h-[270.3px] sm:w-[416.5px] md:h-[307.7px] md:w-[548.25px] lg:h-[385.05px] lg:w-[685.1px]"
-    src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
-    title="YouTube video player"
-    frameBorder={0}
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  />
-</div>
-
+        <div className="flex justify-center">
+          <iframe
+            className="h-[180.45px] w-full rounded-xl xsm:h-[188.7px] xsm:w-[291.55px] sm:h-[270.3px] sm:w-[416.5px] md:h-[307.7px] md:w-[548.25px] lg:h-[385.05px] lg:w-[685.1px]"
+            src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
+            title="YouTube video player"
+            frameBorder={0}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
 
         <div className="flex flex-col gap-10">
           {SharkTankData.map((item) => (

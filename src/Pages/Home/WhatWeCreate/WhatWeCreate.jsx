@@ -11,6 +11,7 @@ import {
 } from "../../../LottieReact/LottieReact";
 import Button from "../../../Shared/Button/Button";
 import Container from "../../../Shared/Container/Container";
+import { Link } from "react-router-dom";
 
 const WhatWeCreate = () => {
   const data = [
@@ -74,9 +75,12 @@ const WhatWeCreate = () => {
             </div>
           ))}
         </div>
-        <div className="mt-10 flex justify-center">
-          <Button>See Plans</Button>
-        </div>
+        <a href="#plans">
+            {" "}
+            <div className="mt-10 flex cursor-pointer justify-center">
+              <Button>See Plans</Button>
+            </div>
+          </a>
       </div>
     </Container>
   );
