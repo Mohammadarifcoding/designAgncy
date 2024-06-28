@@ -4,7 +4,7 @@ import Button from "../../../Shared/Button/Button";
 const BookCall = () => {
   return (
     <div className="">
-      <div className="flex w-full flex-col items-center justify-center gap-y-4 rounded-lg bg-white p-14 lg:w-[430px]">
+      <div className="flex flex-col items-center justify-center gap-y-4 rounded-lg bg-white p-14 lg:w-[430px] w-[290px]">
         <img loading="lazy" className="w-[150px]" src={cp1} alt="Avatar" />
         <h1 className="pt-10 text-center text-3xl font-[599]">
           Book a 15-minute intro call

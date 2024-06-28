@@ -30,7 +30,7 @@ const Footer = () => {
         />
         <div className="px-6">
           <h2 className="heading-1 z-10 mx-auto max-w-[900px] px-1 pb-10 text-center -tracking-wide">
-            See if CreativeOnDemand is right for you. (It totally is.)
+            See if <span className='font-[599]'>Creative On Demand</span> is right for you. (It totally is.)
           </h2>
           <p className="description-1 z-10 mx-auto max-w-[520px] px-1 text-center">
             Get a guided tour through CreativeOnDemand, and find out how you and
@@ -45,7 +45,7 @@ const Footer = () => {
             src={logoIcon}
             alt="Logo Icon"
           />
-          <div className="mx-auto flex max-w-[700px] flex-wrap justify-center gap-x-[100px] gap-y-8 py-8">
+          <div className="mx-auto flex  max-w-[700px] flex-wrap justify-center gap-x-[100px] gap-y-8 py-8">
             {navLinks?.map((each, idx) => (
               <div className="text-sm text-gray-600" key={idx}>
                 {each}

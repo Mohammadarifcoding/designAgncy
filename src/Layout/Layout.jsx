@@ -7,11 +7,11 @@ import Header from "../Shared/Header/Header";
 const Layout = () => {
   const [isOpen, setIsOpen] = useState(true);
   return (
-    <div className="mx-auto max-w-[1440px] pt-10">
+    <div className="mx-auto max-w-[1440px] py-3">
       <div className="">
         <Navbar isOpen={isOpen} setIsOpen={setIsOpen}></Navbar>
       </div>
-      <main className="main-bg mx-4 overflow-x-hidden rounded-3xl">
+      <main className="main-bg mx-3 overflow-x-hidden rounded-3xl">
       <Header />
         <Outlet/>
       </main>
