@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xsm': '400px',
+        'xsm': '500px',
       },
       boxShadow: {
         'custom-hover': '0 6px 13px rgba(0, 0, 0, 0.5)',

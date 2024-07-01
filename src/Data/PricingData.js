@@ -4,6 +4,7 @@ const pricingPlans = [
     plan: "Starter",
     price: 35,
     paymentLink: "https://buy.stripe.com/3cs01tdh05HMdtSbII",
+    title:"One request at a time, cancel anytime",
     features: [
       "1 Request at a time",
       "Average 2/3-day delivery",
@@ -17,6 +18,8 @@ const pricingPlans = [
     plan: "Standard",
     price: 245,
     paymentLink: "https://buy.stripe.com/14kcOffp8eei3TifZ2",
+    title:"One request at a time, cancel anytime",
+
     features: [
       "1 request at a time",
       "Average 24-48 hours delivery",
@@ -32,6 +35,8 @@ const pricingPlans = [
     plan: "Pro",
     price: 395,
     paymentLink: "https://buy.stripe.com/00g4hJ1yi9Y20H68wB",
+    title:"Three request at a time, cancel anytime",
+
     features: [
       "3 requests at a time",
       "Average 24-48 hours delivery",
