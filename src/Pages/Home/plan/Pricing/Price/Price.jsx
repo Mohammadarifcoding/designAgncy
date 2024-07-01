@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./../../../../../Shared/Button/Button";
 
 const Price = ({ data }) => {
-  const { id, plan, price, paymentLink, features } = data;
+  const { id, plan, price, paymentLink, features,title } = data;
   return (
     <div className="mt-3">
       <h2 className="flex items-end">
@@ -12,7 +12,7 @@ const Price = ({ data }) => {
         /m
       </h2>
       <p className="mt-1 text-sm text-gray-800 xsm:text-base">
-        One request at a time. Pause or cancel anytime
+       {title}
       </p>
 
       <div className="my-7 h-[1px] bg-black"></div>
