@@ -48,7 +48,7 @@ const WhatWeCreate = () => {
         <motion.img
           initial={{ x: "50px", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.6 }}
           loading="lazy"
           className="absolute -right-10 -top-24 w-[100px] sm:-right-14 md:-right-10 md:-top-[130px] md:w-[150px] lg:-right-5 lg:top-0 lg:w-[180px] xl:right-0 xl:w-[200px]"
           src={s2}
