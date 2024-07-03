@@ -5,6 +5,8 @@ import Container from "../../../Shared/Container/Container";
 import bannerLeft from "/banner/banner-left.svg";
 import bannerRight from "/banner/banner-right.svg";
 import { Link } from "react-router-dom";
+import { motion} from "framer-motion";
+
 
 const Hero = () => {
   return (
@@ -26,23 +28,42 @@ const Hero = () => {
             alt=""
           />
         </div>
-        <div className="z-100 flex flex-col gap-4">
-          <h2 className="heading-1 mx-auto max-w-[900px] text-center">
-            Unlimited POD Designs on Subscriptions.
-          </h2>
-          <p className="description-1 mx-auto mb-4 mt-3 max-w-[800px] px-2 text-center">
-            Unlock Creative Freedom with Our Flexible POD Design Subscriptions –
-            Cancel Anytime
-          </p>
-          <a href="#plans">
-            {" "}
-            <div className="mt-10 flex cursor-pointer justify-center">
-              <Button>See Plans</Button>
-            </div>
-          </a>
+        {/* content ----------- */}
+        <div className="z-100">
+          <motion.div
+            initial={{ y: "50px", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-4"
+          >
+            <h2 className="heading-1 mx-auto max-w-[900px] text-center">
+              Unlimited POD Designs on Subscriptions.
+            </h2>
+            <p className="description-1 mx-auto mb-4 mt-3 max-w-[800px] px-2 text-center">
+              Unlock Creative Freedom with Our Flexible POD Design Subscriptions
+              – Cancel Anytime
+            </p>
+            <a href="#plans">
+              {" "}
+              <div className="mt-10 flex cursor-pointer justify-center">
+                <Button>See Plans</Button>
+              </div>
+            </a>
 
-          <div className="flex justify-center text-[12px]">Available Now</div>
-          <div className="my-10 flex justify-center">
+            <div className="flex items-center justify-center gap-3 text-[12px]">
+              <div className="relative">
+                <div className="absolute h-3 w-3 animate-ping rounded-full bg-blue-500"></div>
+                <div className="h-3 w-3 rounded-full bg-blue-500"></div>
+              </div>
+              <p className="p-0 text-gray-500">Available Now</p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ x: "-100px", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="my-10 flex justify-center"
+          >
             <Button
               className="rounded-full px-0"
               OuterClassName={"rounded-full mx-4"}
@@ -66,7 +87,7 @@ const Hero = () => {
                 </Marquee>
               </div>
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Container>
