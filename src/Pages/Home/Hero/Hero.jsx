@@ -33,7 +33,7 @@ const Hero = () => {
           <motion.div
             initial={{ y: "50px", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.8 }}
             className="space-y-4"
           >
             <h2 className="heading-1 mx-auto max-w-[900px] text-center">

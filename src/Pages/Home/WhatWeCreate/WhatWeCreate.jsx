@@ -12,6 +12,8 @@ import {
 import Button from "../../../Shared/Button/Button";
 import Container from "../../../Shared/Container/Container";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const WhatWeCreate = () => {
   const data = [
@@ -34,28 +36,49 @@ const WhatWeCreate = () => {
   return (
     <Container className="px-0 md:px-0 lg:px-0">
       <div className="relative flex flex-col py-20">
-        <img
+        <motion.img
+          initial={{ x: "-50px", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
           loading="lazy"
           className="absolute -left-4 -top-24 w-[100px] sm:left-0 md:-left-8 md:top-[180px] lg:-left-5 lg:top-0 lg:w-[180px] xl:left-0 xl:w-[200px]"
           src={s1}
           alt="s1"
         />
-        <img
+        <motion.img
+          initial={{ x: "50px", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
           loading="lazy"
           className="absolute -right-10 -top-24 w-[100px] sm:-right-14 md:-right-10 md:-top-[130px] md:w-[150px] lg:-right-5 lg:top-0 lg:w-[180px] xl:right-0 xl:w-[200px]"
           src={s2}
           alt="s2"
         />
 
-        <h2 className="heading-1 mx-auto max-w-[900px] px-1 pb-10 text-center">
+        <motion.h2
+          initial={{ y: "50px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="heading-1 mx-auto max-w-[900px] px-1 pb-10 text-center"
+        >
           We Create Winning Designs That Makes You Grand
-        </h2>
-        <p className="description-1 mx-auto max-w-[520px] px-1 text-center">
+        </motion.h2>
+        <motion.p
+          initial={{ y: "50px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="description-1 mx-auto max-w-[520px] px-1 text-center"
+        >
           With over 5+ years of experience in the POD industry, we have the
           expertise to guide you to the perfect niche and identify winning
           designs.
-        </p>
-        <div className="flex flex-wrap items-end justify-around px-2 md:px-6 lg:px-12">
+        </motion.p>
+        <motion.div
+          initial={{ y: "50px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-wrap items-end justify-around px-2 md:px-6 lg:px-12"
+        >
           {data?.map((item, idx) => (
             <div key={idx} className="relative mt-10">
               <img
@@ -74,13 +97,18 @@ const WhatWeCreate = () => {
               </p>
             </div>
           ))}
-        </div>
-        <a href="#plans">
-            {" "}
-            <div className="mt-10 flex cursor-pointer justify-center">
-              <Button>See Plans</Button>
-            </div>
-          </a>
+        </motion.div>
+        <motion.a
+          initial={{ y: "50px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          href="#plans"
+        >
+          {" "}
+          <div className="mt-10 flex cursor-pointer justify-center">
+            <Button>See Plans</Button>
+          </div>
+        </motion.a>
       </div>
     </Container>
   );

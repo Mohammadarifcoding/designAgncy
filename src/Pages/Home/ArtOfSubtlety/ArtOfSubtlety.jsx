@@ -4,6 +4,8 @@ import art1 from "/ArtOfSubtlety/art1.svg";
 import art2 from "/ArtOfSubtlety/art2.svg";
 import bar from "/bar.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 const ArtOfSubtlety = () => {
   return (
