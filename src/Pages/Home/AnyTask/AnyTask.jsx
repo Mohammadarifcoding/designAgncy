@@ -1,79 +1,58 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import AnyTaskData, { extraImg, lastImg } from "../../../Data/AnyTask";
+import AnyTaskData from "../../../Data/AnyTask";
 import Button from "../../../Shared/Button/Button";
 import Container from "../../../Shared/Container/Container";
+import { motion } from "framer-motion";
 
 const AnyTask = () => {
   const [number, setNumber] = useState(6);
   return (
     <Container>
       <div className="flex flex-col py-20">
-        <h2 className="heading-1 mx-auto max-w-[900px] pb-10 text-center">
+        <motion.h1
+          initial={{ y: "-50px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="heading-1 mx-auto mb-10 max-w-[700px] text-center"
+        >
           Request any design & we get it done for you
-        </h2>
+        </motion.h1>
+
         <div className="flex flex-wrap items-center justify-center gap-2 xsm:gap-3 sm:gap-5">
           {AnyTaskData.map((item) => (
-            <div className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
+             <motion.div
+             initial={{ y: "50px", opacity: 0 }}
+             whileInView={{ y: 0, opacity: 1 }}
+             transition={{ duration: 0.7 }} className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
               {" "}
-              <item.icon className="text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl" />{" "}
-              {item.title}{" "}
-            </div>
-          ))}
-          {extraImg.map((item) => (
-            <div className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
-              {" "}
-              <img
-                src={item.icon}
-                className="md:w-[25px] w-[20px] text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl"
-              />{" "}
-              {item.title}{" "}
-            </div>
-          ))}
-          {lastImg.map((item) => (
-             <div className="group flex cursor-pointer items-center gap-2 rounded-lg bg-white px-3 py-2 text-sm shadow-lg sm:text-base md:px-5 md:py-3 md:text-lg lg:px-6 lg:py-5 lg:text-xl">
-             {" "}
-             <item.icon className="text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl" />{" "}
-             {item.title}{" "}
-           </div>
+              {item.type === "Normal" ? (
+                <item.icon className="text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:text-xl lg:text-2xl" />
+              ) : (
+                <img
+                  src={item.icon}
+                  className="w-[20px] text-base transition-all duration-1000 group-hover:rotate-180 sm:text-lg md:w-[25px] md:text-xl lg:text-2xl"
+                />
+              )}
+              {item.title}
+            </motion.div>
           ))}
         </div>
 
-        {/* <div className="mt-7 flex gap-10 justify-center flex-wrap">
-           {
-                PortfolioData.slice(0,number).map((item)=>(
-                    <img loading="lazy" className='lg:w-[400px] md:w-[300px]  w-[250px] rounded-xl' src={item} alt="" />
-                ))
-            }
-           </div> */}
-        {/* <div className="mt-16 flex justify-center">
-          <iframe
-            className="h-[177px] w-[274px] rounded-xl xsm:h-[222px] xsm:w-[343px] sm:h-[318px] sm:w-[490px] md:h-[362px] md:w-[645px] lg:h-[453px] lg:w-[806px]"
-            src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
-            title="YouTube video player"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
-        </div> */}
-
         <div className="mt-10 flex justify-center">
-          {/* {
-              number === 6 && <div onClick={()=>{setNumber(PortfolioData.length)}} className="cursor-pointer">
-              <Button >See more work</Button>
-              </div>
-            }
-                        {
-              number !== 6 && <div onClick={()=>{setNumber(6)}} className="cursor-pointer">
-              <Button >See Less Work</Button>
-              </div>
-            } */}
-          <Link to="/portfolio">
-            <div className="cursor-pointer">
-              <Button>View Works</Button>
-            </div>
-          </Link>
+
+            <motion.a
+          initial={{ y: "50px", opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          href="/portfolio"
+        >
+          {" "}
+          <div className="mt-10 flex cursor-pointer justify-center">
+          <Button>View Works</Button>
+          </div>
+        </motion.a>
+
         </div>
       </div>
     </Container>
