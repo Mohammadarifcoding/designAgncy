@@ -17,6 +17,7 @@ import {
 } from "../../../LottieReact/LottieReact";
 import Container from "../../../Shared/Container/Container";
 import bar from "/bar.svg";
+import { motion } from "framer-motion";
 
 const MembershipBenefits = () => {
   const data = [
@@ -59,7 +60,15 @@ const MembershipBenefits = () => {
   ];
   return (
     <div>
-      <img loading="lazy" className="mx-auto mb-10" src={bar} alt="bar" />
+      <motion.img
+        initial={{ y: "-50px", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.4 }}
+        loading="lazy"
+        className="mx-auto mb-10"
+        src={bar}
+        alt="bar"
+      />
       <Container className="px-0 md:px-0 lg:px-0">
         <div className="relative flex flex-col py-20">
           <img

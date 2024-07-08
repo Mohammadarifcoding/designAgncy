@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../../../Shared/Container/Container";
+import { motion } from "framer-motion";
 
 const SharkTank = () => {
   const SharkTankData = [
@@ -41,18 +42,30 @@ const SharkTank = () => {
             </div>
           </div>
         </div> */}
-        <div className="flex justify-center  ">
-          <iframe
-            className=" w-full h-[180px]  rounded-xl sm:h-[270.3px] sm:w-[416.5px] md:h-[307.7px] md:w-[548.25px] lg:h-[385.05px] lg:w-[685.1px]"
-            src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
-            title="YouTube video player"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          />
-        </div>
+        <motion.div
+          initial={{ x: "-50px", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="flex justify-center">
+            <iframe
+              className="h-[180px] w-full rounded-xl sm:h-[270.3px] sm:w-[416.5px] md:h-[307.7px] md:w-[548.25px] lg:h-[385.05px] lg:w-[685.1px]"
+              src="https://www.youtube.com/embed/mjz_aWYv1t4?si=tPmfZaO_rI75Uj5Z"
+              title="YouTube video player"
+              frameBorder={0}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </motion.div>
 
+        <motion.div
+          initial={{ x: "50px", opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+         
         <div className="flex flex-col gap-10">
           {SharkTankData.map((item) => (
             <div className="flex flex-col gap-5">
@@ -63,6 +76,8 @@ const SharkTank = () => {
             </div>
           ))}
         </div>
+        </motion.div>
+
       </div>
     </Container>
   );
