@@ -31,16 +31,7 @@ const OurCreation = () => {
           ))}
         </div>
         <div className="mt-10 flex justify-center">
-          {/* {
-                number === 6 && <div onClick={()=>{setNumber(PortfolioData.length)}} className="cursor-pointer">
-                <Button >See more work</Button>
-                </div>
-              }
-                          {
-                number !== 6 && <div onClick={()=>{setNumber(6)}} className="cursor-pointer">
-                <Button >See Less Work</Button>
-                </div>
-              } */}
+
         </div>
       </div>
     </Container>

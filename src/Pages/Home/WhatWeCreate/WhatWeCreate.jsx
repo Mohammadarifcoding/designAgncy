@@ -54,7 +54,6 @@ const WhatWeCreate = () => {
           src={s2}
           alt="s2"
         />
-
         <motion.h2
           initial={{ y: "50px", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

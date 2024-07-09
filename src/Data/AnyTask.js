@@ -18,101 +18,121 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { SlNotebook } from "react-icons/sl";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { GiHeartNecklace } from "react-icons/gi";
-import dogTag from '/AnyTask/dog_tag.png'
-import bracelet from '/AnyTask/bracelet.png'
+import dogTag from "/AnyTask/dog_tag.png";
+import bracelet from "/AnyTask/bracelet.png";
+
 const AnyTaskData = [
   {
     title: "Message Card",
     icon: FaAddressCard,
+    type: "Normal",
   },
   {
     title: "T-shirt",
     icon: FaTshirt,
+    type: "Normal",
   },
   {
     title: "Mugs",
     icon: FaMugSaucer,
+    type: "Normal",
   },
   {
     title: "Graphic Products",
     icon: SiVorondesign,
+    type: "Normal",
   },
   {
     title: "Journal",
     icon: BsJournalBookmark,
+    type: "Normal",
   },
   {
     title: "Wall Art",
     icon: GiBrickWall,
+    type: "Normal",
   },
   {
     title: "Jewellery",
     icon: GiJewelCrown,
+    type: "Normal",
   },
   {
     title: "Blanket",
     icon: BiBlanket,
+    type: "Normal",
   },
   {
     title: "Acrylic Products",
     icon: PiPaintBrush,
+    type: "Normal",
   },
   {
     title: "Watch",
     icon: BsStopwatch,
+    type: "Normal",
   },
   {
     title: "Photo-engraved Jewelry",
-    icon:GiHeartNecklace,
+    icon: GiHeartNecklace,
+    type: "Normal",
   },
   {
     title: "Stickers",
     icon: RiEmojiStickerLine,
+    type: "Normal",
   },
   {
     title: "Candle",
     icon: GiCandleLight,
+    type: "Normal",
   },
   {
     title: "Hoodies",
-    icon: PiHoodie ,
+    icon: PiHoodie,
+    type: "Normal",
   },
   {
     title: "Posters",
     icon: GiTargetPoster,
+    type: "Normal",
   },
   {
     title: "Seat Covers",
     icon: MdOutlineEventSeat,
+    type: "Normal",
   },
   {
     title: "Phone cases",
     icon: IoIosPhonePortrait,
+    type: "Normal",
   },
   {
     title: "Spiral Notebook",
     icon: SlNotebook,
+    type: "Normal",
   },
   {
     title: "Tote Notebook",
     icon: MdOutlineShoppingBag,
+    type: "Normal",
   },
-
-];
-
-export const extraImg = [
   {
     title: "Bracelets",
     icon: bracelet,
+    type: "Extra",
   },
   {
     title: "Dog Tags",
     icon: dogTag,
+    type: "Extra",
   },
-]
-export const lastImg =   [{
-  title: "more +",
-  icon: MdOutlineMore,
-}]
+  {
+    title: "more +",
+    icon: MdOutlineMore,
+    type: "Normal",
+  },
+];
+
 
 export default AnyTaskData;
